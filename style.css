@@ -1,0 +1,157 @@
+/* Reset & Body */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.game-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Screens */
+.screen {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+.screen.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Titles & Text */
+.game-title {
+    color: #007bff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.intro-text {
+    color: #555;
+    font-size: 1.1em;
+}
+.screen-title {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Intro Graphic */
+.intro-graphic {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+.intro-graphic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.game-btn {
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.game-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Quiz */
+.email-mockup-container {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.email-mockup {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.choice-btn {
+    flex-grow: 1;
+    padding: 15px 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#phishingBtn {
+    background-color: #dc3545; /* Red */
+    color: #fff;
+}
+#legitimateBtn {
+    background-color: #28a745; /* Green */
+    color: #fff;
+}
+
+/* Feedback */
+.feedback-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.feedback-success {
+    color: #28a745;
+}
+.feedback-fail {
+    color: #dc3545;
+}
+.explanation-text {
+    color: #555;
+    font-size: 1.1em;
+}
+.score-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}

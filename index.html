@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Hunter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <!-- Intro Screen -->
+        <div id="introScreen" class="screen active">
+            <h1 class="game-title">Phishing Hunter</h1>
+            <p class="intro-text">Unmask online scams and become a Digital Detective!</p>
+            <div class="intro-graphic">
+                <img src="Preview.gif" alt="Phishing Graphic">
+            </div>
+            <button id="startButton" class="game-btn">Start Test</button>
+        </div>
+
+        <!-- Info Screen -->
+        <div id="infoScreen" class="screen">
+            <h2 class="screen-title">Enter Your Details</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="e.g., DigitalDetective" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="e.g., example@mail.com" required>
+            </div>
+            <button id="submitInfoButton" class="game-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <h2 class="screen-title">Question <span id="questionNumber"></span> of 5</h2>
+            <p id="questionText" class="question-text"></p>
+            <div class="email-mockup-container">
+                <img id="emailImage" src="" alt="Email Mockup" class="email-mockup">
+            </div>
+            <div class="button-group">
+                <button id="phishingBtn" class="choice-btn">Phishing</button>
+                <button id="legitimateBtn" class="choice-btn">Legitimate</button>
+            </div>
+        </div>
+        
+        <!-- Feedback Screen -->
+        <div id="feedbackScreen" class="screen">
+            <h2 id="feedbackResult" class="feedback-title"></h2>
+            <p id="feedbackExplanation" class="explanation-text"></p>
+            <button id="nextQuestionBtn" class="game-btn">Next Question</button>
+        </div>
+
+        <!-- Score Screen -->
+        <div id="scoreScreen" class="screen">
+            <h2 class="screen-title">Quiz Complete!</h2>
+            <p>You scored: <span id="scoreDisplay">0</span> out of 5.</p>
+            <p id="finalMessage"></p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
