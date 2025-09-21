@@ -23,7 +23,7 @@
 const quizQuestions = [
     {
         question: "Is this a phishing attempt or a legitimate email from a bank?",
-        image: "images/bank-email.jpg",
+        image: "Images/Q1.png",
         answer: "Phishing",
         explanation: "Look closely at the sender's email address. It's not a real bank domain. Also, the email uses a sense of urgency to make you click a suspicious link."
     },
@@ -178,4 +178,5 @@ nextQuestionBtn.addEventListener("click", () => {
 });
 
 // Initialize the game by showing the first screen
+
 showScreen(introScreen);
