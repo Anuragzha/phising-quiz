@@ -35,7 +35,7 @@ const quizQuestions = [
     },
     {
         question: "You received this email from your IT department about a password update. Is it legitimate?",
-        image: "images/it-email.jpg",
+        image: "Images/Q3.png",
         answer: "Phishing",
         explanation: "The email has a generic greeting, not your name. The link might also look slightly different from your company's real URL. Always verify requests like this with a real IT contact."
     },
@@ -180,4 +180,5 @@ nextQuestionBtn.addEventListener("click", () => {
 // Initialize the game by showing the first screen
 
 showScreen(introScreen);
+
 
