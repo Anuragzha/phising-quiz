@@ -41,7 +41,7 @@ const quizQuestions = [
     },
     {
         question: "A popular online store sent you a receipt for a purchase you didn't make. Is it a scam?",
-        image: "Images/Q3.png"
+        image: "Images/Q3.png",
         answer: "Phishing",
         explanation: "Scammers use fake receipts to trick you into clicking a link to 'cancel the order.' This gives them access to your account or downloads malware."
     },
@@ -180,6 +180,7 @@ nextQuestionBtn.addEventListener("click", () => {
 // Initialize the game by showing the first screen
 
 showScreen(introScreen);
+
 
 
 
