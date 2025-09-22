@@ -29,7 +29,7 @@ const quizQuestions = [
     },
     {
         question: "Is this a real offer for a free vacation?",
-        image: "images/prize-offer.jpg",
+        image: "Images/q2.png",
         answer: "Phishing",
         explanation: "If an offer seems too good to be true, it probably is. This email is trying to get you to give away personal information by promising a fake prize."
     },
@@ -180,3 +180,4 @@ nextQuestionBtn.addEventListener("click", () => {
 // Initialize the game by showing the first screen
 
 showScreen(introScreen);
+
