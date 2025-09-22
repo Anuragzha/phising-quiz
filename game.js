@@ -35,13 +35,13 @@ const quizQuestions = [
     },
     {
         question: "You received this email from your IT department about a password update. Is it legitimate?",
-        image: "Images/Q3.png",
+        image: "Images/Q.png",
         answer: "Phishing",
         explanation: "The email has a generic greeting, not your name. The link might also look slightly different from your company's real URL. Always verify requests like this with a real IT contact."
     },
     {
         question: "A popular online store sent you a receipt for a purchase you didn't make. Is it a scam?",
-        image: "images/receipt-scam.jpg",
+        image: "Images/Q3.png"
         answer: "Phishing",
         explanation: "Scammers use fake receipts to trick you into clicking a link to 'cancel the order.' This gives them access to your account or downloads malware."
     },
@@ -180,5 +180,6 @@ nextQuestionBtn.addEventListener("click", () => {
 // Initialize the game by showing the first screen
 
 showScreen(introScreen);
+
 
 
