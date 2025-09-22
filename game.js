@@ -33,12 +33,7 @@ const quizQuestions = [
         answer: "Phishing",
         explanation: "If an offer seems too good to be true, it probably is. This email is trying to get you to give away personal information by promising a fake prize."
     },
-    {
-        question: "You received this email from your IT department about a password update. Is it legitimate?",
-        image: "Images/Q.png",
-        answer: "Phishing",
-        explanation: "The email has a generic greeting, not your name. The link might also look slightly different from your company's real URL. Always verify requests like this with a real IT contact."
-    },
+    
     {
         question: "A popular online store sent you a receipt for a purchase you didn't make. Is it a scam?",
         image: "Images/Q3.png",
@@ -180,6 +175,7 @@ nextQuestionBtn.addEventListener("click", () => {
 // Initialize the game by showing the first screen
 
 showScreen(introScreen);
+
 
 
 
