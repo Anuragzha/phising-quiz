@@ -47,9 +47,9 @@ const quizQuestions = [
     },
     {
         question: "This email is from a social media site to verify your account. Is it legitimate?",
-        image: "images/account-verification.jpg",
+        image: "Images/Q5.png",
         answer: "Legitimate",
-        explanation: "This email uses a formal tone, has a correct company email address, and asks you to verify without a sense of urgency. It's a real communication."
+        explanation: "This email uses a formal tone, has a correct company url address, and asks you to verify without a sense of urgency. It's a real communication."
     }
 ];
 
@@ -180,6 +180,7 @@ nextQuestionBtn.addEventListener("click", () => {
 // Initialize the game by showing the first screen
 
 showScreen(introScreen);
+
 
 
 
